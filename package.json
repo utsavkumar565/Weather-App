@@ -4,7 +4,7 @@
   "description": "Creating a Weather NodeJS App",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start":"node index3.js"
   },
   "author": "Utsav Taliyan",
   "license": "ISC",
