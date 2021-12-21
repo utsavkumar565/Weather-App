@@ -7,7 +7,7 @@ const homeFile = fs.readFileSync("home.html", "utf-8");
 const replaceVal = (tempVal, orgVal) => {
     let temperature = tempVal.replace("{%tempval%}", Math.floor(orgVal.main.temp-273.15));
     temperature = temperature.replace("{%tempmin%}", Math.floor(orgVal.main.temp_min-273.15));
-    temperature = temperature.replace("{%tempmax%}", Math.floor(orgVal.main.temp_max));
+    temperature = temperature.replace("{%tempmax%}", Math.floor(orgVal.main.temp_max-273.15));
     temperature = temperature.replace("{%location%}", orgVal.name);
     temperature = temperature.replace("{%country%}", orgVal.sys.country);
     temperature = temperature.replace("{%tempstatus%}", orgVal.weather[0].main);
